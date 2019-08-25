@@ -1,0 +1,17 @@
+#Jedis
+jedis:
+  #控制一个pool可分配多少个jedis实例,如果是jedis 2.4以前的版本使用（redis.maxActive）
+  maxTotal: 100
+  #最大建立连接等待时间。如果超过此时间将接到异常。设为-1表示无限制
+  maxWaitMillis: 3000
+  #连接的最小空闲时间 默认1800000毫秒(30分钟)
+  minEvictableIdleTimeMillis: 300000
+
+  host: 120.78.159.118
+  port: 1215
+  timeout: 10000
+  password: yxRedis@lxxc.com
+  # 最大空闲数
+  maxIdle: 300
+
+
